@@ -5,9 +5,9 @@ export const NavBar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand fw-bold" href="#">
+          <Link className="navbar-brand fw-bold" href="/">
             ToDo
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

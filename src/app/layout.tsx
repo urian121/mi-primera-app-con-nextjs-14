@@ -30,10 +30,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
 
-        <div className="container border">
-          <div className="row justify-content-md-center mt-5">
-            <div className="col col-lg-2">{children}</div>
-          </div>
+        <div className="container">
+          <div className="row justify-content-md-center mt-5">{children}</div>
         </div>
       </body>
     </html>

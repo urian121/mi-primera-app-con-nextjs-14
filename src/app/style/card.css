@@ -1,0 +1,74 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #333 !important;
+  color: #fff !important;
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.container_card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.custom_card {
+  background-color: #1d1d1d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px; /* Puedes ajustar este ancho según tus necesidades */
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.card-header .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header .info h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-header .info p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .custom_card {
+    width: 100%; /* Las tarjetas ocuparán el 100% del ancho disponible en pantallas pequeñas */
+  }
+}
