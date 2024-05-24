@@ -1,5 +1,9 @@
-async function getData() {
-  let url = "https://jsonplaceholder.typicode.com/posts";
+import Link from "next/link";
+import User from "@/app/interfaces/interfaces";
+
+async function getDataUsers() {
+  let url = "https://jsonplaceholder.typicode.com/users";
+
   const res = await fetch(url, {
     cache: "no-store",
   });
@@ -12,23 +16,22 @@ async function getData() {
   return data;
 }
 
-type interfacePost = {
-  id: number;
-  title: string;
-  body: string;
-};
-
 export default async function Usuarios() {
-  const data = await getData();
+  const data = await getDataUsers();
 
   return (
-    <>
-      {data.map((post: interfacePost) => (
-        <div key={post.id}>
-          <h6>{post.title}</h6>
-          <p>{post.body}</p>
-        </div>
+    <ol>
+      {data.map((user: User) => (
+        <li key={user.id}>
+          {" "}
+          {user.name}
+          <span>
+            <Link href={`/users/detalles/${user.id}`} className="btn btn-light">
+              Ver Detalles
+            </Link>
+          </span>
+        </li>
       ))}
-    </>
+    </ol>
   );
 }

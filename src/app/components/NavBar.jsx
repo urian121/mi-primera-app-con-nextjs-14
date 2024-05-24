@@ -21,13 +21,18 @@ export const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="/projects">
-                  proyectos
+                <Link className="nav-link active" aria-current="page" href="/posts">
+                  Posts
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/users">
                   Usuarios
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/products">
+                  Productos
                 </Link>
               </li>
               <li className="nav-item">
