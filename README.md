@@ -1,35 +1,4 @@
-# Iniciando con Next.js 14
-
-##### Code
-
-        async function getData() {
-        const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-            cache: "no-store",
-        });
-        const data = await res.json();
-        return data;
-        }
-
-        type interfacePost = {
-        id: number;
-        title: string;
-        body: string;
-        };
-
-        export default async function Home() {
-        const data = await getData();
-
-        return (
-            <>
-            {data.map((post: interfacePost) => (
-                <div key={post.id}>
-                <h1>{post.title}</h1>
-                <p>{post.body}</p>
-                </div>
-            ))}
-            </>
-        );
-        }
+# Iniciando con el Framework Next.js 14
 
 #### Notas
 

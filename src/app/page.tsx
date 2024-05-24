@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import "./style/card.css";
 import dataPerson from "./api/api.json";
 
@@ -18,7 +20,7 @@ export default async function Home() {
         {dataPerson.map((post: interfacePost) => (
           <div className="custom_card" key={post.id}>
             <div className="card-header">
-              <img src={post.image} alt="Profile Picture" />
+              <Image src={post.image} width={100} height={100} alt={post.name} />
               <div className="info">
                 <h4>{post.name}</h4>
                 <p>UI & UX</p>
