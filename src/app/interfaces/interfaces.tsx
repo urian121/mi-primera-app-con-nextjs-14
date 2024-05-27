@@ -17,3 +17,12 @@ export default interface User {
     bs: string;
   };
 }
+
+export default interface Producto {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+}

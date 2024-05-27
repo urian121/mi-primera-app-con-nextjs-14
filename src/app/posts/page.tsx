@@ -26,7 +26,7 @@ export default async function Usuarios() {
     <>
       {data.map((post: interfacePost) => (
         <div key={post.id}>
-          <h6>{post.title}</h6>
+          <h4>{post.title}</h4>
           <p>{post.body}</p>
         </div>
       ))}

@@ -9,3 +9,7 @@
 ##### Formatear el JSON
 
      <h1>hello {JSON.stringify(params)}</h1>
+
+[productId]. Los corchetes indican un segmento de ruta dinámico.
+
+El error en el código proporcionado es que no se puede usar await directamente dentro de un componente de React de la forma en que está implementado. En los componentes de React, el código asincrónico se maneja típicamente con useEffect y useState o utilizando bibliotecas como react-query para la gestión de datos.

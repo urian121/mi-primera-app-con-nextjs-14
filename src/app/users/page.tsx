@@ -26,7 +26,7 @@ export default async function Usuarios() {
           {" "}
           {user.name}
           <span>
-            <Link href={`/users/detalles/${user.id}`} className="btn btn-light">
+            <Link href={`/users/${user.id}`} className="btn btn-light">
               Ver Detalles
             </Link>
           </span>
