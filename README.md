@@ -13,3 +13,11 @@
 [productId]. Los corchetes indican un segmento de ruta dinámico.
 
 El error en el código proporcionado es que no se puede usar await directamente dentro de un componente de React de la forma en que está implementado. En los componentes de React, el código asincrónico se maneja típicamente con useEffect y useState o utilizando bibliotecas como react-query para la gestión de datos.
+
+#### Dynamic Routes
+
+    https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes
+
+    export default function Page({ params }) {
+        return <div>My Post: {params.slug}</div>
+    }
