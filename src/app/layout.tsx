@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NavBar } from "./components/NavBar";
+import { ChekeSesion } from "./components/ChequeSesion";
 
 //import "./globals.css";
 
@@ -29,6 +30,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <NavBar />
+        <ChekeSesion />
 
         <div className="container">
           <div className="row justify-content-md-center mt-5">{children}</div>
